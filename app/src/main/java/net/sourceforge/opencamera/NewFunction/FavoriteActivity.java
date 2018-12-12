@@ -24,13 +24,16 @@ import java.util.ArrayList;
 
 public class FavoriteActivity extends Activity {
 
-    private static String TAG = "FavoriteActivity";
+    private static final String TAG = "FavoriteActivity";
     private ArrayList<String> data;
 
     private DbOperator dbOperator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d(TAG, "Update to Github...");
+        Log.d(TAG, "Hello Github!");
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favorite);
 
